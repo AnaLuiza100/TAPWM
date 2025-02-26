@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rfr.css">
+    <title>Inteligência Artificial - TAPWM</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="#">TAPWM</a></h1>
+        <nav class="nav-bar">
+            <a href="./index.html">Home</a>
+            <a href="./sobre.html">Sobre a IA</a>
+            <a href="./aplicacao.html">Aplicações</a>
+            <a href="./referencias.html">Referências</a>
+        </nav>
+    </header>
+
+    <div class="aplicacao fade-in">
+        <h1 class="titulo-aplicacao">Aplicações</h1>
+        <div class="gp-quadrado">
+            <div class="quadrado">
+                <h3>Saúde</h3>
+                <p>A IA auxilia médicos no diagnóstico, atendimento personalizado e descoberta de novos tratamentos ao analisar grandes volumes de dados para identificar padrões e relações.</p>
+            </div>
+            <div class="quadrado">
+                <h3>Transporte</h3>
+                <p>No transporte público e de carga, a IA otimiza o transporte público, prevê horários, escolhe rotas no privado e aprimora a logística de cargas, garantindo entregas rápidas e eficientes.</p>
+            </div>
+            <div class="quadrado">
+                <h3>Educação</h3>
+                <p>A IA também é aplicada na área da educação, trazendo um aprendizado personalizado e melhorando a participação dos estudantes. Além disso, auxilia nas avaliações de trabalhos e agendamento de aulas.</p>
+            </div>
+            <div class="quadrado">
+                <h3>Finanças</h3>
+                <p>No setor financeiro, a IA possibilita a personalização de serviços, a gestão de riscos e fraudes, além de garantir transparência, conformidade, automação de processos e redução de despesas.</p>
+            </div>
+            <div class="quadrado">
+                <h3>Fabricação</h3>
+                <p>A IA na fabricação é essencial para a automação de tarefas, aumento da produtividade e maior qualidade, detectando defeitos e melhorando o controle de qualidade.</p>
+            </div>
+            <div class="quadrado">
+                <h3>Assistentes Virtuais</h3>
+                <p>Atualmente, os assistentes virtuais são uma das aplicações mais populares da IA, permitindo realizar chamadas, consultar a previsão do tempo e controlar dispositivos inteligentes em diversos aparelhos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exemplos fade-in">
+        <h1 class="titulo-exemplos">Exemplos</h1>
+
+        <ul class="lista-exemplos">
+            <li class="item-exemplo" onclick="mostrarDetalhes('assistentes-virtuais')">
+                <h2>Assistentes Virtuais</h2>
+                <div id="assistentes-virtuais" class="detalhes">
+                    <p>São os exemplos mais comuns, pois fazem parte do nosso cotidiano. Esses assistentes são desenvolvidos para interagir com os usuários por meio de reconhecimento de voz e processamento de linguagem natural.</p>
+                    <div class="gp-img">
+                        <img class="img-menor" src="./img/siri.png" alt="Siri">
+                        <img class="img-menor"src="./img/alexa.png" alt="Alexa">
+                        <img class="img-menor" src="./img/google-assistente.png" alt="Google Assistente">
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-exemplo" onclick="mostrarDetalhes('carros-autonomos')">
+                <h2>Carros Autônomos</h2>
+                <div id="carros-autonomos" class="detalhes">
+                    <p>Veículos autônomos utilizam inteligência artificial e câmeras inteligentes para mapear o ambiente ao seu redor e tomar decisões em tempo real. A IA coleta dados sobre a rua, posicionamento de pedestres, presença de placas de trânsito, outros veículos e outros elementos do entorno, permitindo que o veículo navegue de forma segura e eficiente.</p>
+                    <div class="gp-img">
+                        <img src="./img/tesla.jpg" alt="tesla">
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-exemplo" onclick="mostrarDetalhes('robotica')">
+                <h2>Robótica</h2>
+                <div id="robotica" class="detalhes">
+                    <p>Na robótica, a inteligência artificial aprimora a eficiência no controle de movimento e navegação de robôs, especialmente em ambientes com obstáculos, como fábricas e indústrias. A IA permite que os robôs tomem decisões autônomas e se adaptem a mudanças no ambiente, aumentando a precisão e a produtividade. Um exemplo é o robozinho Tinbot é um projeto que surgiu em um programa de aceleração de startups do Brasil, o Ciclo de Capacitação 2018, do InovAtiva.</p>
+                    <div class="gp-img">
+                        <img src="./img/robo assistente.jpg" alt="Tibnot">
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-exemplo" onclick="mostrarDetalhes('atendimento-cliente')">
+                <h2>Atendimento ao Cliente</h2>
+                <div id="atendimento-cliente" class="detalhes">
+                    <p>A inteligência artificial tem se tornado uma ferramenta essencial no atendimento ao cliente. Com o uso de chatbots em sites e e-commerces, a IA é capaz de responder perguntas, fornecer detalhes e solucionar questões dos consumidores. Além disso, a tecnologia pode ser aplicada para oferecer um atendimento personalizado, especialmente após a compra, aprimorando a experiência do cliente.</p>
+                    <div class="gp-img">
+                        <img src="./img/chat-bot.jpg" alt="chatbot">
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-exemplo" onclick="mostrarDetalhes('videogames')">
+                <h2>Videogames</h2>
+                <div id="videogames" class="detalhes">
+                    <p>Nos jogos, a IA é frequentemente usada com aprendizado de máquina para estudar o comportamento do jogador. Ao analisar o nível de habilidade e conhecimento do usuário, o jogo ajusta gradualmente a dificuldade, adaptando-se ao progresso do jogador e proporcionando uma experiência mais desafiadora. No Man's Sky e Minecraft são exemplos populares de videogames que utilizam PCG (Conteúdo Gerado Proceduralmente) com apoio da IA</p>
+                    <div class="gp-img">
+                        <img src="./img/minecraft.jpg" alt="Minecraft">
+                        <img src="./img/Man's Sky.jpg" alt="Man's Sky.jpg">
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-exemplo" onclick="mostrarDetalhes('agricultura')">
+                <h2>Agricultura</h2>
+                <div id="agricultura" class="detalhes">
+                    <p>A inteligência artificial na agricultura oferece grande suporte aos produtores rurais, permitindo a detecção de pragas, doenças e deficiências nutricionais nas plantas. Com essa tecnologia, é possível otimizar a produção, melhorar o manejo das lavouras e aumentar a eficiência na utilização de recursos, contribuindo significativamente para uma produção de alimentos mais sustentável e eficaz.</p>
+                    <div class="gp-img">
+                        <img src="./img/agricultura.jpg" alt="IA na agricultura">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
