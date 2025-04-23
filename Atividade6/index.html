@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Filme</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>Pesquisa de Opinião sobre o Filme</h1>
+
+    <form id="pesquisaForm">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <label for="opiniao">Opinião:</label>
+        <select id="opiniao">
+            <option value="4">Ótimo</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Péssimo</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="resultados">
+        <table>
+            <tr><th>Média da Idade</th><td><span id="mediaIdade">-</span></td></tr>
+            <tr><th>Mais Velho</th><td><span id="maisVelha">-</span></td></tr>
+            <tr><th>Mais Novo</th><td><span id="maisNova">-</span></td></tr>
+            <tr><th>Péssimo</th><td><span id="quantPessimo">-</span></td></tr>
+            <tr><th>% Ótimo/Bom</th><td><span id="porcentagem">-</span></td></tr>
+            <tr><th>Homens</th><td><span id="homens">-</span></td></tr>
+            <tr><th>Mulheres</th><td><span id="mulheres">-</span></td></tr>
+            <tr><th>Outros</th><td><span id="outros">-</span></td></tr>
+        </table>
+
+        <canvas id="chart" width="400" height="300"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
