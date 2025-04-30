@@ -1,0 +1,50 @@
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+    background-image: url('img/fundo.png'); 
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.form {
+    background-color: rgba(128, 128, 128, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 55px;
+    max-width: 290px;
+    height: 290px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 60px;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#imagemTriangulo {
+    margin-top: 15px;
+    max-width: 90px;
+}
