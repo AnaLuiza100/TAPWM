@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Funções JS</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Funções JS</h1>
+
+    <div class="button-group">
+        <button onclick="mostrarFormulario('maior')">Maior de três números</button>
+        <button onclick="mostrarFormulario('ordenar')">Ordenar três números</button>
+        <button onclick="mostrarFormulario('palindromo')">Verificar palíndromo</button>
+        <button onclick="mostrarFormulario('subconjunto')">Verificar subconjunto</button>
+      </div>
+  
+      <div id="form-maior" class="form-section">
+        <input type="number" id="m1" placeholder="Número 1">
+        <input type="number" id="m2" placeholder="Número 2">
+        <input type="number" id="m3" placeholder="Número 3">
+        <button onclick="calcularMaior()">Calcular Maior</button>
+        <div class="result" id="res-maior"></div>
+      </div>
+  
+      <div id="form-ordenar" class="form-section">
+        <input type="number" id="o1" placeholder="Número 1">
+        <input type="number" id="o2" placeholder="Número 2">
+        <input type="number" id="o3" placeholder="Número 3">
+        <button onclick="ordenarNumerosJS()">Ordenar</button>
+        <div class="result" id="res-ordenar"></div>
+      </div>
+  
+      <div id="form-palindromo" class="form-section">
+        <input type="text" id="texto-palindromo" placeholder="Digite uma frase ou palavra">
+        <button onclick="verificarPalindromo()">Verificar</button>
+        <div class="result" id="res-palindromo"></div>
+      </div>
+  
+      <div id="form-subconjunto" class="form-section">
+        <input type="text" id="p1" placeholder="Palavra principal">
+        <input type="text" id="p2" placeholder="Subconjunto?">
+        <button onclick="verificarSubconjuntoJS()">Verificar</button>
+        <div class="result" id="res-subconjunto"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

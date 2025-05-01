@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #0077b6;
+}
+.button-group{
+    display: flex;
+}
+.button-group button {
+    background: #b3e5fc;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.button-group button:hover {
+    background: #81d4fa;
+}
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.form-section {
+    display: none;
+    margin-top: 15px;
+}
+.result {
+    background: #d0f0fd;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
