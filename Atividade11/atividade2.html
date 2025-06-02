@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atividade 2 - Conta Corrente e Poupança</title>
+  <link rel="stylesheet" href="atividades.css">
+</head>
+<body>
+
+  <h2>Conta Corrente e Poupança</h2>
+  <form id="formConta" autocomplete="off">
+    <h3>Corrente</h3>
+    <input type="text" id="nomeC" placeholder="Nome" required />
+    <input type="text" id="bancoC" placeholder="Banco" required />
+    <input type="text" id="numeroC" placeholder="Número da Conta" required />
+    <input type="number" id="saldoC" placeholder="Saldo" required min="0" step="any" />
+    <input type="number" id="especial" placeholder="Saldo Especial" required min="0" step="any" />
+
+    <h3>Poupança</h3>
+    <input type="text" id="nomeP" placeholder="Nome" required />
+    <input type="text" id="bancoP" placeholder="Banco" required />
+    <input type="text" id="numeroP" placeholder="Número da Conta" required />
+    <input type="number" id="saldoP" placeholder="Saldo" required min="0" step="any" />
+    <input type="number" id="juros" placeholder="Juros (%)" required min="0" step="any" />
+    <input type="text" id="vencimento" placeholder="Data de Vencimento" required />
+
+    <button type="submit">Mostrar Dados</button>
+  </form>
+  <div id="resultado" aria-live="polite" role="region"></div>
+
+  <a href="menu.html">⬅ Voltar ao Menu</a>
+  <script src="atv2.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6959CD, #8A2BE2);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: 0;
+  }
+  
+  h2 {
+    color: #f0f0f0;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+  
+  form {
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  h3 {
+    color: #6A5ACD;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #8A2BE2;
+    padding-bottom: 4px;
+    font-weight: 700;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 12px 14px;
+    border: 2px solid #6959CD;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 100%;
+  }
+  
+  input:focus {
+    border-color: #8A2BE2;
+    outline: none;
+    box-shadow: 0 0 8px #8A2BE2;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #6A5ACD;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+  }
+  
+  button:hover {
+    background-color: #483D8B;
+  }
+  
+  #resultado {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 360px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 20px 24px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #6A5ACD;
+    user-select: none;
+    text-align: left;
+    line-height: 1.4;
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #resultado h4 {
+    margin-top: 0;
+    color: #483D8B;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  
+  #resultado:empty {
+    box-shadow: none;
+    background: transparent;
+    color: transparent;
+    min-height: 0;
+    padding: 0;
+  }
+  
+  a {
+    margin-top: 32px;
+    color: #f0f0f0;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #d1c4ff;
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 400px) {
+    form,
+    #resultado {
+      width: 100%;
+    }
+  }
+  
