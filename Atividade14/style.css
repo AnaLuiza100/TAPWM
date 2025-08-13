@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.radio-group {
+    margin-top: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #ff6f61;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 48%;
+}
+
+button.submit {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+button.submit:hover {
+    background-color: #e65b50;
+}
+
+button.reset {
+    background-color: #ccc;
+    color: #333;
+}
+
+button.reset:hover {
+    background-color: #b3b3b3;
+}
