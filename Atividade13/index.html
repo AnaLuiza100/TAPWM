@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformar Texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Transformar Texto</h2>
+
+    <!-- Input Text -->
+    <input type="text" id="meuInput" placeholder="Digite algo aqui">
+
+    <!-- RadioButtons -->
+    <div class="radio-group">
+        <label>
+            <input type="radio" name="transformacao" onclick="transformarTexto('maiusculas')">
+            Maiúsculas
+        </label>
+
+        <label>
+            <input type="radio" name="transformacao" onclick="transformarTexto('minusculas')">
+            Minúsculas
+        </label>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
